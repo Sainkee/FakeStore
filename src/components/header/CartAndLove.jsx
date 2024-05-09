@@ -1,7 +1,7 @@
 import { Heart, ShoppingCart,ChevronDown } from "lucide-react";
 
 export default function CartAndLove({customColor= "black"}) {
-   console.log(customColor)
+  
   return (
     <span className="gap-2 flex">
 

@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import Header from "./components/header/Header";
 import HeaderLogo from "./components/HeaderLogo";
-import HeaderLink from "./components/header/HeaderLink";
+import CarauselSection from "./components/carousel/CarauselSection";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
       <div className=" mx-auto ">
         <Header />
         <HeaderLogo />
+        <CarauselSection/>
         
       </div>
     </>

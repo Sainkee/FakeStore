@@ -22,7 +22,7 @@ export default function HeaderLink() {
             {<ChevronDown />}
           </a>
           {categoryState && (
-            <ul className="absolute top-22   bg-white w-full text-black flex flex-col gap-2 py-2 px-2">
+            <ul className="absolute top-22 z-20  bg-white w-full text-black flex flex-col gap-2 py-2 px-2">
               {Object.keys(sideBar).map((categoryKey, index) => {
                 const category = sideBar[categoryKey];
                 return (
@@ -36,7 +36,7 @@ export default function HeaderLink() {
                     </span>
                     <span className=" hidden group-hover:block">
                       {category.children.length > 0 && (
-                        <ul className="absolute top-2 left-[35%] z-20  bg-gray-200 w-fit text-base text-gray-500 flex flex-col gap-2 p-5">
+                        <ul className="absolute top-2 left-[35%]  bg-gray-200 w-fit text-base text-gray-500 flex flex-col gap-2 p-5">
                           {category.children.map((child, childIndex) => (
                             <li
                               key={childIndex}

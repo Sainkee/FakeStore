@@ -1,3 +1,9 @@
+import slider1 from "../assets/carousel-1.jpg";
+import slider2 from "../assets/carousel-2.jpg";
+import slider3 from "../assets/carousel-3.jpg";
+import offer1 from "../assets/offer-1.jpg";
+import offer2 from "../assets/offer-2.jpg";
+
 export const navBar = [
   { label: "Home", children: [] },
   { label: "Shop", children: [] },
@@ -24,3 +30,18 @@ export const sideBar = {
   jackets: { label: "Jackets", children: [] },
   blazers: { label: "Blazers", children: [] },
 };
+
+export const carouselImg = [
+  {
+    img: slider1,
+    label: "Men Fashion ",
+  },
+  {
+    img: slider2,
+    label: "Women Fashion ",
+  },
+  {
+    img: slider3,
+    label: "Kids Fashion ",
+  },
+];
