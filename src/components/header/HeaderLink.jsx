@@ -28,7 +28,7 @@ export default function HeaderLink() {
                 return (
                   <li
                     key={index}
-                    className="px-6 relative group whitespace-nowrap cursor-pointer"
+                    className="px-6 text-base text-gray-500 relative group whitespace-nowrap cursor-pointer"
                   >
                     <span className="flex">
                       {category.label}
@@ -36,7 +36,7 @@ export default function HeaderLink() {
                     </span>
                     <span className=" hidden group-hover:block">
                       {category.children.length > 0 && (
-                        <ul className="absolute top-2 left-[35%] z-20  bg-gray-200 w-fit text-black flex flex-col gap-2 p-5">
+                        <ul className="absolute top-2 left-[35%] z-20  bg-gray-200 w-fit text-base text-gray-500 flex flex-col gap-2 p-5">
                           {category.children.map((child, childIndex) => (
                             <li
                               key={childIndex}
@@ -64,9 +64,9 @@ export default function HeaderLink() {
               {item.label} {item.children.length > 0 && <ChevronDown />}
             </a>
             {item.children.length > 0 && (
-              <ul className="absolute hidden group-hover:block  bg-white  text-black p-4">
+              <ul className="absolute hidden group-hover:block  bg-yellow-500 text-base text-black p-2 ">
                 {item.children.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="hover:bg-white px-4">
                     <a href={`/${item}`}>{item}</a>
                   </li>
                 ))}
