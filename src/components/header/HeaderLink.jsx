@@ -32,7 +32,7 @@ export default function HeaderLink() {
                   >
                     <span className="flex">
                       {category.label}
-                      {category.children.length > 0 && <ChevronDown />}{" "}
+                      {category.children.length > 0 && <span className="flex items-center"> <ChevronDown /></span>}{" "}
                     </span>
                     <span className=" hidden group-hover:block">
                       {category.children.length > 0 && (
