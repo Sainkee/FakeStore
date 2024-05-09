@@ -17,7 +17,10 @@ export default function HeaderLogo() {
             </span>
           </span>
 
-          <span onClick={()=>setHeaderaLink(!headerLink)} className="md:hidden text-white">
+          <span
+            onClick={() => setHeaderaLink(!headerLink)}
+            className="md:hidden text-white"
+          >
             <Menu size={40} />
           </span>
           <span className=" md:flex items-center  text-xl hidden  justify-center text-gray-300">
@@ -37,10 +40,15 @@ export default function HeaderLogo() {
             <p className="font-semibold">+012 345 6 789</p>
           </span>
         </nav>
-       
       </div>
-      {headerLink && <span  ><HeaderLink /></span>}
-      <span className="hidden md:block" ><HeaderLink /></span>
+      {headerLink && (
+        <span className=" md:hidden ">
+          <HeaderLink />
+        </span>
+      )}
+      <span className="hidden md:block">
+        <HeaderLink />
+      </span>
     </>
   );
 }

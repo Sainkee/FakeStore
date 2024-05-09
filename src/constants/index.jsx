@@ -1,24 +1,26 @@
-export const navBar = {
-  Categories: {
-    dresses: ["Mens Dresses", "Womens Dresses", "Kids Dresses"],
-    more: [
-      "shirts",
-      "t-shirts",
-      "jeans",
-      "trousers",
-      "shorts",
-      "skirts",
-      "swimwear",
-      "sweaters",
-      "sweatshirts",
-      "hoodies",
-      "jackets",
-      "blazers",
-    ],  
+export const navBar = [
+  { label: "Home", children: [] },
+  { label: "Shop", children: [] },
+  { label: "Shop Detail", children: [] },
+  { label: "Pages", children: ["shopping cart", "checkout"] },
+  { label: "Contact", children: [] },
+];
+
+export const sideBar = {
+  dresses: {
+    label: "Dresses",
+    children: ["Mens Dresses", "Womens Dresses", "Kids Dresses"],
   },
-  home:"home",
-  shop:"shop",
-  "shop detail": "Shop Detail",
-  pages: ["shopping cart", "checkout"],
-  contact: "contact",
+  shirts: { label: "Shirts", children: [] },
+  tshirts: { label: "T-Shirts", children: [] },
+  jeans: { label: "Jeans", children: [] },
+  trousers: { label: "Trousers", children: [] },
+  shorts: { label: "Shorts", children: [] },
+  skirts: { label: "Skirts", children: [] },
+  swimwear: { label: "Swimwear", children: [] },
+  sweaters: { label: "Sweaters", children: [] },
+  sweatshirts: { label: "Sweatshirts", children: [] },
+  hoodies: { label: "Hoodies", children: [] },
+  jackets: { label: "Jackets", children: [] },
+  blazers: { label: "Blazers", children: [] },
 };
