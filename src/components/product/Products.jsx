@@ -29,7 +29,7 @@ export default function Products() {
                 />
               </span>
 
-              <div className="bg-white/40 hidden   group-hover:flex justify-center items-center gap-5 z-20 top-0 left-0 bottom-0 right-0 absolute">
+              <div className="bg-white/40 hidden   group-hover:flex justify-center items-center gap-2 md:gap-5 z-20 top-0 left-0 bottom-0 right-0 absolute">
                 {icons.map((IconComponent, index) => (
                   <span
                     className=" hover:bg-gray-600 p-2 border border-gray-600 text-gray-900 hover:text-yellow-400"
