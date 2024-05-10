@@ -17,11 +17,11 @@ export default function Products() {
       <h1 className="text-3xl md:text-5xl my-10 text-gray-700 ">
         FEATURED PRODUCTS
       </h1>
-      <div className="grid-cols-1 grid   sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 justify-between gap-5">
+      <div className="grid-cols-2 grid   sm:grid-cols-3 md:grid-col-4 lg:grid-cols-5 justify-between gap-5">
         {products.map((product, index) => (
           <div key={index} className="flex flex-col items-center   ">
-            <span className="group overflow-hidden relative">
-              <span className="w-[25%] mx-auto ">
+            <span className="group overflow-hidden relative ">
+              <span className=" mx-auto  ">
                 <img
                   src={product.image}
                   alt={product.name}
