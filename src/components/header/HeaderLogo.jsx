@@ -1,5 +1,5 @@
 import { Menu, Search } from "lucide-react";
-import HeaderLink from "./header/HeaderLink";
+import HeaderLink from "./HeaderLink";
 import { useState } from "react";
 export default function HeaderLogo() {
   const [headerLink, setHeaderaLink] = useState(false);
